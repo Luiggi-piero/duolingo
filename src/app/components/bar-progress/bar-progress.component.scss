@@ -1,0 +1,52 @@
+nav {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        color: #fe4a4b;
+    }
+    span{
+        visibility: hidden;
+    }
+    .bar{
+        position: relative;
+        background-color: #e5e5e5;
+        width: 300px;
+        border-radius: 13px;
+        height: 20px;
+    }
+    .progress{
+        background-color: #58cc00;
+        width: 60px;
+        height: 20px;
+        border-radius: 13px;
+        position: absolute;
+        top: 0;
+    }
+    .progress-item{
+        background-color: #7ad633;
+        width: 40px;
+        height: 10px;
+        padding: 2px;
+        border-radius: 13px;
+        position: absolute;
+        top: 5px;
+        left: 8px;
+    }
+    
+}

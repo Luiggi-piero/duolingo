@@ -1,0 +1,27 @@
+<main>
+    <h3>{{question.label}}</h3>
+    <section class="cards" [ngClass]="{'active-z-index': answered}">
+        <ng-container *ngFor="let answer of question.answers; let i = index">
+            <div class="card" 
+                [ngClass]="{'card_selected': answered && answerSelected.label === answer.label}"
+                (click)="selectAnswer(answer)">
+                <img [src]="answer.src" alt="respuesta">
+                <p>{{answer.label}}</p>
+            </div>
+        </ng-container>
+        <!-- <div class="card">
+            <img src="../../../assets/img/2.png" alt="">
+            <p>the boy</p>
+        </div>
+        <div class="card">
+            <img src="../../../assets/img/3.png" alt="">
+            <p>the lord</p>
+        </div>
+        <div class="card">
+            <img src="../../../assets/img/4.png" alt="">
+            <p>the woman</p>
+        </div> -->
+    </section>
+</main>
+<app-correct-message *ngIf="answered && answerSelected.isCorrect"></app-correct-message>
+<app-incorrect-message *ngIf="answered && !answerSelected.isCorrect"></app-incorrect-message>

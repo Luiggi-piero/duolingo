@@ -1,0 +1,43 @@
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    // gap: 120px;
+    padding: 30px;
+
+    h3 {
+        color: black;
+        font-weight: 800;
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .answers {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 50px;
+
+        .answer {
+            height: 60px;
+            cursor: pointer;
+        }
+    }
+}
+
+app-correct-message,
+app-incorrect-message {
+    position: relative;
+}
+
+.active-z-index {
+    z-index: -1;
+}

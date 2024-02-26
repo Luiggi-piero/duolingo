@@ -1,0 +1,8 @@
+<app-bar-progress></app-bar-progress>
+<app-multiple-option *ngIf="question?.type === 'multiple-option'" [question]="question">
+</app-multiple-option>
+<app-multiple-picture *ngIf="question?.type === 'multiple-picture'" [question]="question">
+</app-multiple-picture>
+<main *ngIf="questions.length < this.step + 1">
+    <h3>Clase finalizada</h3>
+</main>

@@ -1,0 +1,14 @@
+<main>
+    <h3>
+        {{question.label}}
+    </h3>
+    <section class="answers" [ngClass]="{'active-z-index': answered}">
+        <div class="btn btn-question answer" *ngFor="let answer of question.answers" 
+            (click)="selectAnswer(answer)">
+            {{answer.label}}
+        </div>
+    </section>
+</main>
+
+<app-correct-message *ngIf="answered && answerSelected.isCorrect"></app-correct-message>
+<app-incorrect-message *ngIf="answered && !answerSelected.isCorrect"></app-incorrect-message>

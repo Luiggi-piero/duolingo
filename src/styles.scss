@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color: #58cc00;
+    --font-secondary: #c3c3c3;
+    --font-question: #B6B5B6;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn {
+    border-radius: 13px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary{
+    background-color: #58cc00;
+    color: white;
+    border-bottom: 4px solid #5ba908;
+}
+
+.btn-question{
+    background-color: white;
+    border: 2px solid var(--font-question);
+    border-bottom: 4px solid var(--font-question);
+    font-size: 16px;
+}
