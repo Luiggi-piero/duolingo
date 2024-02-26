@@ -1,5 +1,7 @@
 # Duolingo
 
+![screencapture-duolingo-web-netlify-app-2024-02-25-23_53_45](https://github.com/Luiggi-piero/duolingo/assets/86317658/f21d083e-e3cf-4fab-bd71-f2043d9b3fbe)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
 
 ## Development server
